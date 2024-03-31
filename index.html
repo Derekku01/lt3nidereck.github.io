@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grading Program</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+            width: 99vw;
+            height: 100vh;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+        <script type="text/javascript">
+            var a, b, c, d, ave, g, m
+            
+            a=prompt("Please enter your grade in the First Quarter", 0)
+            b=prompt("Please enter your grade in the Second Quarter", 0)
+            c=prompt("Please enter your grade in the Third Quarter", 0)
+            d=prompt("Please enter your grade in the Fourth Quarter", 0)
+
+            ave=(parseFloat(a)+parseFloat(b)+parseFloat(c)+parseFloat(d))/4
+
+            if(ave >= 95)
+            {  
+                g = "A"
+            }
+            if(ave >=90 && ave < 95)
+            {
+                g ="A-"
+            }
+            if(ave >=85 && ave < 90)
+            {
+                g ="B+"
+            }
+            if(ave >=80 && ave < 85)
+            [
+                g ="B"
+            ]
+            if(ave >=75 && ave < 80)
+            {
+                g ="B-"
+            }
+            if (ave < 75)
+            {
+                g ="C"
+            }
+            
+            switch(g)
+            {
+                case "A":
+                m = "OUTSTANDING"
+                break
+                case "A+":
+                m = "EXCELLENT"
+                break
+                case "A-":
+                m = "VERY GOOD"
+                break
+                case "B+":
+                m="GOOD"
+                break
+                case "B":
+                m = "SATISFACTORY"
+                break
+                case "C":
+                m = "PASS"
+                break
+                default:
+                m="FAIL"
+            }
+            document.write("<h1> This is your final Grade </h1>")
+            document.write("Your First Quarter grade is ", a)
+            document.write("<br />Your Second Quarter grade is ", b)
+            document.write("<br />Your Third Quarter grade is ", c)
+            document.write("<br />Your Fourth Quarter grade is ", d)
+            document.write("<br />Your <b>average<b> is ", ave)
+            document.write("<br />Letter grade</b> is ", g)
+        </script>
+</body>
+</html>
